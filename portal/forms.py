@@ -59,7 +59,7 @@ class DocumentForm(forms.ModelForm):
 	title = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control','placeholder':'Enter title'}),required=True,max_length=30)
 	#document = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control','placeholder':'Enter username'}),required=True,max_length=30)
 	message = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control','placeholder':'Enter message'}),required=True,max_length=30)
-
+ 
 	class Meta:
 		model = Document
 		fields = ('title', 'document', 'message' )
